@@ -1,0 +1,30 @@
+# Node modules
+/node_modules
+/backend/node_modules
+/climate-change-app/node_modules
+
+# Logs
+*.log
+
+# Environment variables
+.env
+
+# Build output
+/build
+/public/static
+
+# React Native
+*.jks
+*.keystore
+
+# Mac OS
+.DS_Store
+
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# OS generated files
+Thumbs.db
+ehthumbs.db
+Icon?
