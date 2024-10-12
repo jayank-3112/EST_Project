@@ -1,0 +1,41 @@
+/* ClimateChangeDetails.css */
+.climate-change-details {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.climate-change-details h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.climate-change-details p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.climate-change-details h3 {
+  font-size: 1.8rem;
+  margin-top: 20px;
+}
+
+.climate-change-details ul {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.climate-change-details li {
+  background-color: #dff9fb;
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.climate-change-details li:hover {
+  transform: scale(1.02);
+  background-color: #e1f5fe;
+}

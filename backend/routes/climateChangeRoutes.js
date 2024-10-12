@@ -14,15 +14,24 @@ router.get('/', async (req, res) => {
 });
 
 // Get a single climate change by ID
+// router.get('/:id', async (req, res) => {
+//   try {
+//     const climateChange = await ClimateChange.findById(req.params.id).populate('disasters');
+//     res.json(climateChange);
+//   } catch (error) {
+//     res.status(500).json({ message: error.message });
+//   }
+// });
+// GET a climate change by ID with populated disasters
 router.get('/:id', async (req, res) => {
-  try {
-    const climateChange = await ClimateChange.findById(req.params.id).populate('disasters');
-    res.json(climateChange);
-  } catch (error) {
-    res.status(500).json({ message: error.message });
-  }
-});
-
+    try {
+      const climateChange = await ClimateChange.findById(req.params.id).populate('disasters');
+      if (!climateChange) return res.status(404).json({ message: 'Climate change not found' });
+      res.json(climateChange);
+    } catch (error) {
+      res.status(500).json({ message: 'Error fetching climate change data', error });
+    }
+  });
 // Get disaster by ID
 router.get('/disaster/:id', async (req, res) => {
   try {

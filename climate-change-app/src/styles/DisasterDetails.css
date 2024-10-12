@@ -1,0 +1,42 @@
+/* DisasterDetails.css */
+.disaster-details {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.disaster-details h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.disaster-details p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.disaster-details h4 {
+  font-size: 1.5rem;
+  margin-top: 20px;
+}
+
+.disaster-details ul {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.disaster-details li {
+  font-size: 1.3rem; /* Bigger size for disaster names */
+  padding: 15px;
+  border: 2px solid #3498db;
+  border-radius: 8px;
+  background-color: #e8f8f5;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.disaster-details li:hover {
+  transform: scale(1.05);
+  background-color: #b2ebf2;
+}
